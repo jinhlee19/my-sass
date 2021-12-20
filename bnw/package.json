@@ -1,6 +1,14 @@
 {
+  "name": "bnw",
+  "version": "1.0.0",
+  "description": "This is a black and white minimal theme for magazine websites. created this to enjoy sass and it's my first sass project 🙂 wish me a luck!",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Rafy",
+  "license": "ISC",
   "dependencies": {
-    "node": "^17.3.0",
-    "sass": "^1.45.0"
+    "node-sass": "^7.0.0"
   }
 }

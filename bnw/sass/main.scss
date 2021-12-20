@@ -1,30 +1,73 @@
+@charset "utf-8"; 
 // @import "base";
 // @import "main";
 // @import "layout";
 
 // Fonts
 @font-face {
-    font-family: 'El1945B';
+    font-family: 'el1945B';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'El1945';
+    font-family: 'el1945';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 .notosanskr * {
-	font-family: "Noto Sans KR", sans-serif;
+	font-family: 'Playfair Display', 'Noto Sans KR', sans-serif;
 }
 
+
+// Reset
+/* * @ RESET CSS * ------------------------------- */
+html,body,div,p,span,strong,b,em,iframe,pre,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,fieldset,form,legend,label,table,caption,thead,tbody,tfoot,tr,th,td,ul,ol,li,a,input,select,textarea {	
+margin: 0;	padding: 0;	border: 0 none;}body {	font-family: Noto Sans KR, "맑은 고딕", "돋움", Dotum, AppleGothic, Sans-serif,		Arial;	font-size: 12px;	line-height: 1;	color: #333;
+}
+ul, ol, li {list-style: none;}
+em, address {font-style: normal;}
+img {border: 0 none; font-size: 0; line-height: 0;}
+sup {position: relative; top: 2px; font-size: 11px; line-height: 100%;}
+table {border-collapse: collapse; border-spacing: 0;}
+caption {overflow: hidden;	width: 0;	height: 0;	font-size: 0;	line-height: 0;}
+th,td {vertical-align: middle; /* white-space: nowrap */}
+a {color: #333;	text-decoration: none; line-height: 1;}
+a:hover,a:focus,a:active {text-decoration: underline;}
+a:visited {color: #333;}
+*,html {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+*,*:before,*:after {box-sizing: border-box;	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;}
+
+
 // Default
+
 * {
 	margin: 0;
 	padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "";
+    box-sizing: border-box;
 }
 
 // Global Colors
 $color-primary: #000;
+
+li.items{
+    color:#000;
+    text-decoration: none;
+}
+.header-logo {
+    display: block;
+    width:300px;
+    height:300px;
+    border: 1px solid green;
+}
