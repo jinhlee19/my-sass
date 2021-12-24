@@ -1,5 +1,75 @@
-@charset "UTF-8";
+/*** The new CSS Reset - version 1.4.4 (last updated 22.12.2021) ***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert; }
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none; }
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%; }
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse; }
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert; }
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none; }
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly. */
+:where([contenteditable]) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space; }
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Playfair Display','el1945',sans-serif;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-weight: 400; }
+
+ul.items {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.6rem; }
+
 @font-face {
   font-family: 'el1945B';
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff") format("woff");
@@ -13,91 +83,194 @@
   font-style: normal; }
 
 .notosanskr * {
-  font-family: 'Playfair Display', 'Noto Sans KR', sans-serif; }
+  font-family: 'Playfair Display', sans-serif; }
 
-/* * @ RESET CSS * ------------------------------- */
-html, body, div, p, span, strong, b, em, iframe, pre, h1, h2, h3, h4, h5, h6, img, dl, dt, dd, fieldset, form, legend, label, table, caption, thead, tbody, tfoot, tr, th, td, ul, ol, li, a, input, select, textarea {
-  margin: 0;
-  padding: 0;
-  border: 0 none; }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 124rem;
+  height: rem;
+  margin: 1.2rem auto 0.5rem; }
 
-body {
-  font-family: Noto Sans KR, "맑은 고딕", "돋움", Dotum, AppleGothic, Sans-serif,		Arial;
-  font-size: 12px;
-  line-height: 1;
-  color: #333; }
+.header {
+  flex: 1 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit; }
+  .header__logo-box {
+    flex: 0 0 150px; }
+  .header__logo {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .header-nav {
+    display: flex; }
+  .header nav-menu > * {
+    display: flex;
+    justify-content: start; }
 
-ul, ol, li {
-  list-style: none; }
+.navigation {
+  flex: 1 0 25%;
+  font-family: "Playfair Display";
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .navigation-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase; }
+    .navigation-items > * {
+      padding: 2rem; }
 
-em, address {
-  font-style: normal; }
+.menu__wrapper {
+  animation: all 0.2s; }
 
-img {
-  border: 0 none;
-  font-size: 0;
-  line-height: 0; }
+.menu__item--hamburger {
+  animation: all 0.2s; }
+  .menu__item--hamburger:active .line:nth-child(1), .menu__item--hamburger:visited .line:nth-child(1), .menu__item--hamburger:focus .line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px); }
+  .menu__item--hamburger:active .line:nth-child(2), .menu__item--hamburger:visited .line:nth-child(2), .menu__item--hamburger:focus .line:nth-child(2) {
+    visibility: hidden; }
+  .menu__item--hamburger:active .line:nth-child(3), .menu__item--hamburger:visited .line:nth-child(3), .menu__item--hamburger:focus .line:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px); }
 
-sup {
-  position: relative;
-  top: 2px;
-  font-size: 11px;
-  line-height: 100%; }
+.menu__wrapper .line {
+  height: 2px;
+  width: 25px;
+  background: #000;
+  margin: 5px auto;
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+.main__slider {
+  width: 124rem;
+  margin: 0 auto; }
+  .main__slider-box {
+    height: 480px;
+    padding: 2rem 0;
+    margin: 1.6rem 0;
+    border: 0.2rem solid black;
+    background-image: url(https://picsum.photos/400/340?grayscale);
+    background-size: cover; }
 
-caption {
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  line-height: 0; }
+.content {
+  width: 124rem;
+  margin: 0 auto; }
+  .content h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem; }
+  .content .divider-2 {
+    display: block;
+    margin: 1rem 0;
+    border-top: 2px solid #333;
+    width: 100%; }
+  .content .divider {
+    display: block;
+    border-top: 1px solid #c0c0c0;
+    width: 100%; }
+  .content-box {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem; }
+    .content-box .card__prev-1 {
+      max-width: 30rem;
+      margin-right: 1rem;
+      border: 1px solid #c0c0c0;
+      overflow: hidden; }
+      .content-box .card__prev-1:last-child {
+        margin-right: 0; }
+      .content-box .card__prev-1 .prev-category {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        border: 1px solid #c0c0c0;
+        padding: 0.5rem 1.5rem;
+        margin: 0.5rem 1.2rem;
+        border-radius: 30rem;
+        background-color: #666;
+        color: white; }
 
-th, td {
-  vertical-align: middle;
-  /* white-space: nowrap */ }
+footer {
+  height: 300px; }
 
-a {
-  color: #333;
-  text-decoration: none;
-  line-height: 1; }
+.card__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 1.2rem 0;
+  overflow-wrap: break-word; }
 
-a:hover, a:focus, a:active {
-  text-decoration: underline; }
+.card__prev-1 {
+  margin-bottom: 2rem; }
 
-a:visited {
-  color: #333; }
+.card__desc {
+  overflow-wrap: break-word;
+  font-family: "el1945";
+  margin: 0.2rem 0 1rem 0; }
+  .card__desc > *:not(2) {
+    margin-right: 1rem; }
+  .card__desc--hearts {
+    margin-left: 1.4rem; }
+  .card__desc--sale {
+    color: #f91339;
+    text-decoration: underline;
+    font-style: italic;
+    letter-spacing: -0.1rem;
+    margin-left: 2rem; }
 
-*, html {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+.width-1240 {
+  width: 124rem;
+  margin: 0 auto; }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  font-family: "";
-  box-sizing: border-box; }
-
-li.items {
-  color: #000;
-  text-decoration: none; }
-
-.header-logo {
+.search {
   display: block;
-  width: 300px;
-  height: 300px;
-  border: 1px solid green; }
+  align-items: center;
+  font-size: 1.6rem;
+  position: relative; }
+  .search__input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.4rem 4rem;
+    transition: all 0.2s;
+    background-color: #c0c0c0; }
+    .search__input:focus {
+      width: 100%;
+      outline: none; }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #c0c0c0; }
+  .search .icon-search {
+    width: 2.25rem;
+    height: 2.25rem;
+    fill: #666;
+    position: absolute;
+    top: 1.3rem;
+    left: 3rem; }
+  .search__button {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .3rem; }
+
+.button-tag {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .button-tag__tag--search {
+    margin-right: 1rem;
+    padding: .5rem 2rem;
+    border: 1px solid #c0c0c0;
+    border-radius: 10rem; }

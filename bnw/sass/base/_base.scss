@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Playfair Display','el1945',sans-serif;
+	box-sizing: border-box;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+ul.items {
+	color: #000;
+	text-decoration: none;
+    font-size: 1.6rem;
+}
+

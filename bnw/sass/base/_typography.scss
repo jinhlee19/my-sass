@@ -1,0 +1,17 @@
+// Fonts
+@font-face {
+    font-family: 'el1945B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'el1945';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+	font-family: 'Playfair Display', sans-serif;
+}
