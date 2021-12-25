@@ -1,0 +1,14 @@
+//////////////////////////////////////////////
+// Layout
+
+@mixin screensize-1 {
+	width: 124rem;
+	margin: 0 auto;
+}
+
+//////////////////////////////////////////////
+// Components
+
+@mixin box-border {
+	border: 2px solid $color-black;
+}

@@ -1,0 +1,14 @@
+//////////////////////////////////////////////
+// Main Slider
+
+.main__slider {
+	@extend %screensize-1;
+	&-box {
+		height: 35rem;
+		padding: 2rem 0;
+		margin: 1.6rem 0;
+		@include box-border;
+		background-image: url(https://picsum.photos/400/340?grayscale);
+		background-size: cover;
+	}
+}

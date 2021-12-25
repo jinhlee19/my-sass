@@ -14,37 +14,36 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="container">
-			<header class="header">
-				<div class="header__logo-box">
-					<!-- <img src="img/dshine_logo.png" alt="logo" class="header__logo"> -->
-					<h1 class="header__logo">Savannah</h1>
+		<header class="header">
+			<div class="header__logo-box">
+				<!-- <img src="img/dshine_logo.png" alt="logo" class="header__logo"> -->
+				<h1 class="header__logo">Savannah</h1>
+			</div>
+			<nav class="header__navigation">
+				<ul class="header__navigation-items">
+					<li class="">
+						<a href="/about"><span>About</span></a>
+					</li>
+					<li class="">
+						<a href="#"><span>Project</span></a>
+					</li>
+					<li class="">
+						<a href="#"><span>News</span></a>
+					</li>
+					<li class="">
+						<a href="#"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+			<div class="menu-icon">
+				<div onClick="" class="menu-icon--hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
 				</div>
-				<nav class="navigation">
-					<ul class="navigation-items">
-						<li class="">
-							<a href="/about"><span>About</span></a>
-						</li>
-						<li class="">
-							<a href="#"><span>Project</span></a>
-						</li>
-						<li class="">
-							<a href="#"><span>News</span></a>
-						</li>
-						<li class="">
-							<a href="#"><span>Contact</span></a>
-						</li>
-					</ul>
-				</nav>
-				<div class="menu__wrapper">
-					<div onClick="" class="menu__item--hamburger">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
-					</div>
-				</div>
-			</header>
-		</div>
+			</div>
+		</header>
+	
 		<section class="main__slider width-1240">
 			<div class="main__slider-box"></div>
 		</section>
@@ -54,7 +53,7 @@
 					<use xlink:href="img/sprite.svg#icon-search"></use>
 				</svg>
 				
-				<input type="text" placeholder="Type anything" class="search__input" />
+				<input type="text" placeholder="Type anything" class="search__input-text" />
 				<button class="button search__button">Search</button>
 			</form>
 			<div class="button-tag">
@@ -69,25 +68,91 @@
 
 		<section class="content">
 			<h4 class="section-heading">PROJECTs</h4>
-			<hr class="divider-2" />
+			<hr class="divider" />
 			<div class="content-box">
 				<article class="card__prev-1">
-					<img src="https://picsum.photos/300/250?grayscale" alt="" />
+					<!-- <img src="https://picsum.photos/300/200?grayscale" alt="" /> -->
+					<div class="card__image" alt="class-image">
+						<span class="prev-category">Intro</span>
+						<div class="card__image-holder">
+						</div>
+					</div>
 					<div class="card__text-box">
-						<h5 class="card__subtitle">Subtitle</h5>
-						<h4 class="card__title">Place for the the of Article 1</h4>
+						<h5 class="card__subtitle">Author Name</h5>
+						<h4 class="card__title">Title of Article 1</h4>
 						<p class="card__desc">
 							Lorem ipsum dolor sit amet consectetur adip isicing elit.
 						</p>
 						<div class="card__desc">
 							<span class="card__desc--price"> &#8361;39,400</span>
-							<span class="card__desc--payments">(5 Month)</span>
+							<span class="card__desc--payments">(3 Month)</span>
 							<span class="card__desc--hearts">268</span>
 							<span class="card__desc--sale">38% Sale</span>
 						</div>
 					</div>
-					<hr class="divider" />
-					<span class="prev-category">Intro</span>
+				</article>
+				<article class="card__prev-1">
+					<!-- <img src="https://picsum.photos/300/200?grayscale" alt="" /> -->
+					<div class="card__image" alt="class-image">
+						<span class="prev-category">Intro</span>
+						<div class="card__image-holder">
+						</div>
+					</div>
+					<div class="card__text-box">
+						<h5 class="card__subtitle">Author Name</h5>
+						<h4 class="card__title">Title of Article 1</h4>
+						<p class="card__desc">
+							Lorem ipsum dolor sit amet consectetur adip isicing elit.
+						</p>
+						<div class="card__desc">
+							<span class="card__desc--price"> &#8361;39,400</span>
+							<span class="card__desc--payments">(3 Month)</span>
+							<span class="card__desc--hearts">268</span>
+							<span class="card__desc--sale">38% Sale</span>
+						</div>
+					</div>
+				</article>
+				<article class="card__prev-1">
+					<!-- <img src="https://picsum.photos/300/200?grayscale" alt="" /> -->
+					<div class="card__image" alt="class-image">
+						<span class="prev-category">Intro</span>
+						<div class="card__image-holder">
+						</div>
+					</div>
+					<div class="card__text-box">
+						<h5 class="card__subtitle">Author Name</h5>
+						<h4 class="card__title">Title of Article 1</h4>
+						<p class="card__desc">
+							Lorem ipsum dolor sit amet consectetur adip isicing elit.
+						</p>
+						<div class="card__desc">
+							<span class="card__desc--price"> &#8361;39,400</span>
+							<span class="card__desc--payments">(3 Month)</span>
+							<span class="card__desc--hearts">268</span>
+							<span class="card__desc--sale">38% Sale</span>
+						</div>
+					</div>
+				</article>
+				<article class="card__prev-1">
+					<!-- <img src="https://picsum.photos/300/200?grayscale" alt="" /> -->
+					<div class="card__image" alt="class-image">
+						<span class="prev-category">Intro</span>
+						<div class="card__image-holder">
+						</div>
+					</div>
+					<div class="card__text-box">
+						<h5 class="card__subtitle">Author Name</h5>
+						<h4 class="card__title">Title of Article 1</h4>
+						<p class="card__desc">
+							Lorem ipsum dolor sit amet consectetur adip isicing elit.
+						</p>
+						<div class="card__desc">
+							<span class="card__desc--price"> &#8361;39,400</span>
+							<span class="card__desc--payments">(3 Month)</span>
+							<span class="card__desc--hearts">268</span>
+							<span class="card__desc--sale">38% Sale</span>
+						</div>
+					</div>
 				</article>
 			</div>
 			<aside class="latest"></aside>

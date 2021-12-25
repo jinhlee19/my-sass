@@ -1,5 +1,4 @@
-//////////////////////////////////////////////
-// Font Import
+// Fonts
 @font-face {
     font-family: 'el1945B';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
@@ -16,35 +15,3 @@
 .notosanskr * {
 	font-family: 'Playfair Display', sans-serif;
 }
-
-//////////////////////////////////////////////
-// Base
-
-*{
-	margin: 0;
-	padding: 0;
-}
-*,
-*::before,
-*::after {
-
-	box-sizing: inherit;
-}
-html {
-	font-size: 62.5%;
-}
-
-body {
-	box-sizing: border-box;
-	font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.6;
-	font-family: 'Playfair Display','el1945',sans-serif;
-}
-
-ul.items {
-	color: #000;
-	text-decoration: none;
-    font-size: 1.6rem;
-}
-

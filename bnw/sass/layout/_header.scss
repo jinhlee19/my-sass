@@ -1,0 +1,46 @@
+//////////////////////////////////////////////
+// Header
+
+.header {
+	width: 124rem;
+	margin: 1rem auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1 0 10%;
+	font-family: inherit;
+	&__logo-box {
+		flex: 0 0 150px;
+	}
+	&__logo {
+		// height: 4.5rem; //images
+		font-size: 3rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	&-nav {
+		display: flex;
+	}
+	nav-menu > * {
+		display: flex;
+		justify-content: start;
+	}
+	&__navigation {
+		flex: 1 0 25%;
+		font-family: "Playfair Display";
+		font-size: 1.6rem;
+		// background-color: orange;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&-items {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-transform: uppercase;
+			& > * {
+				padding: 2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+//////////////////////////////////////////////
+// Button
+
+.button-tag {
+	margin: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__tag--search {
+		margin-right: 1rem;
+		padding: 0.5rem 2rem;
+		border: 1px solid $color-primary-light;
+		border-radius: 10rem;
+	}
+}
+
+//////////////////////////////////////////////
+// Menu-icon
+
+.menu-icon {
+	animation: all 0.2s;
+	.line {
+		height: 2px;
+		width: 25px;
+		background: $color-primary-dark;
+		margin: 5px auto;
+		transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+	&--hamburger {
+		animation: all 0.2s;
+		&:active,
+		&:visited,
+		&:focus {
+			.line:nth-child(1) {
+				transform: rotate(45deg) translate(6px, 6px);
+			}
+			.line:nth-child(2) {
+				visibility: hidden;
+			}
+			.line:nth-child(3) {
+				transform: rotate(-45deg) translate(4px, -4px);
+			}
+		}
+	}
+}
