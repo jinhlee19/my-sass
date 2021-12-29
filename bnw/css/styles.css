@@ -1,6 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-.content, .search, .main__slider {
+.card__container, .search, .main__slider {
   width: 124rem;
   margin: 0 auto; }
 
@@ -91,8 +91,33 @@ ul.items {
   text-decoration: none;
   font-size: 1.6rem; }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem; }
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem; }
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem; }
+
 h4 {
   font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem; }
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem; }
+
+h6 {
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.2rem; }
 
@@ -133,13 +158,13 @@ h4 {
 footer {
   height: 300px; }
 
-.content .divider {
+.card__container .divider {
   display: block;
   margin: 1rem 0;
   border-top: 2px solid #333;
   width: 100%; }
 
-.content-box {
+.card__container .card__list {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;

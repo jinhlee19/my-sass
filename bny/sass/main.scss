@@ -1,27 +1,47 @@
-// @import "base";
-// @import "main";
-// @import "layout";
+@charset "utf-8";
 
-// Fonts
-@font-face {
-	font-family: "jalnan";
-	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
-		format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-.notosanskr * {
-	font-family: "Noto Sans KR", sans-serif;
-}
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/variable";
 
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/landing";
+
+@import "components/buttons";
+@import "components/cards";
+@import "components/search";
+@import "components/sliders";
+
+@import "vendors/fonts";
 // Default
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-// Global Colors
-$color-primary: #333;
+*,*::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+}
 
+body{
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.6;
+	font-family: 'Montserrat', 'Noto Sans', sans-serif;
+}
+
+ul{
+	text-decoration: none;
+}
 

@@ -2,7 +2,7 @@
 // Main Slider
 
 .main__slider {
-	@extend %screensize-1;
+	@extend %screen124;
 	&-box {
 		height: 35rem;
 		padding: 2rem 0;

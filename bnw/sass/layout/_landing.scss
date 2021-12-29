@@ -1,15 +1,15 @@
 //////////////////////////////////////////////
 // Landing
 
-.content {
-	@extend %screensize-1;
+.card__container {
+	@extend %screen124;
 	.divider {
 		display: block;
 		margin: 1rem 0;
 		border-top: 2px solid $color-primary-dark;
 		width: 100%;
 	}
-	&-box {
+	.card__list {
 		display: flex;
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
