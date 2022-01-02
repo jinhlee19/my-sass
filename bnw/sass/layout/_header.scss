@@ -21,10 +21,6 @@
 	&-nav {
 		display: flex;
 	}
-	nav-menu > * {
-		display: flex;
-		justify-content: start;
-	}
 	&__navigation {
 		flex: 1 0 25%;
 		font-family: "Playfair Display";
@@ -42,5 +38,9 @@
 				padding: 2rem;
 			}
 		}
+	}
+	nav-menu > * {
+		display: flex;
+		justify-content: start;
 	}
 }

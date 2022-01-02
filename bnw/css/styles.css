@@ -4,6 +4,49 @@
   width: 124rem;
   margin: 0 auto; }
 
+@keyframes line-grower {
+  0% {
+    margin-right: 0; }
+  100% {
+    margin-right: 100px; } }
+
+.grow {
+  border-bottom: 1px solid black;
+  font-size: 2rem;
+  display: inline-block; }
+  .grow .space {
+    animation: line-grower 4s .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+
+.btn-inline {
+  border: none;
+  color: #000;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: transparent; }
+  .btn-inline span {
+    margin-left: 3px;
+    transition: all 0.2s; }
+  .btn-inline:hover {
+    color: black; }
+    .btn-inline:hover span {
+      margin-left: 8px; }
+  .btn-inline:active {
+    animation: pulsate 1s infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
 /*** The new CSS Reset - version 1.4.4 (last updated 22.12.2021) ***/
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
@@ -137,9 +180,6 @@ h6 {
     font-weight: bold; }
   .header-nav {
     display: flex; }
-  .header nav-menu > * {
-    display: flex;
-    justify-content: start; }
   .header__navigation {
     flex: 1 0 25%;
     font-family: "Playfair Display";
@@ -154,6 +194,9 @@ h6 {
       text-transform: uppercase; }
       .header__navigation-items > * {
         padding: 2rem; }
+  .header nav-menu > * {
+    display: flex;
+    justify-content: start; }
 
 footer {
   height: 300px; }
@@ -171,6 +214,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem; }
+
+.section {
+  width: 124rem;
+  margin: 0 auto; }
 
 .button-tag {
   margin: 2rem;
